@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/10/13/03/prague-980732_960_720.jpg');
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}   
+
+.overlay {
+    background-color: #000000cc;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+#msg{
+    background-color: rgb(168, 237, 164);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkred;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.container {
+    border: 2px solid red;
+    background-color: rgb(255 255 255 / 38%);
+    width: 49%;
+    min-width: max-content;
+    margin: 20px auto;
+    /* overflow:auto; */
+    min-height: 80vh;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.header {
+    /* width: 293px; */
+    /* text-align: center; */
+    font-size: 40px;
+    padding: 0px 31%;
+    min-width: 694px;
+    /* margin: auto; */
+    line-height: 52px;
+    background-color: rgb(5, 44, 78);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.icon {
+    display: inline-block;
+    color: white;
+    /* text-align: center; */
+    /* position: relative;   */
+    /* left: 50%; */
+}
+
+.name {
+    display: inline-block;
+    color: white;
+}
+
+.name .blue {
+    color: rgb(255, 216, 21);
+    display: inline-block;
+}
+
+.book {
+    align-items: center;
+    background-color: aliceblue;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.book input, .btn {
+    width: 260px;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+    border: 1px dashed goldenrod;
+    border-radius: 20px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.book p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:13px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    
+}
+
+.btn{
+    background-color: rgb(247, 244, 242);
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(5, 44, 78);
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 266px;
+}
+
+.display {
+    height: auto;
+    min-height: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    
+}
+.display{
+    max-height: 300px;
+    overflow: auto;
+    top: 0px;
+    position: relative;
+    margin: 10px 1px;
+    /* padding-top: 331px; */
+    width: 100%;
+}
+
+.display h3{
+    font-size: 30px;
+    color:crimson;
+    position:sticky;
+    top:0px;
+    background-color: aliceblue;
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index:2;
+}
+
+.table{
+    
+}
+
+.table thead{
+    background-color: rgb(199, 223, 244);
+    position:sticky;
+    top:34px;
+    z-index:2;
+}
+
+.table thead tr th{
+    border-bottom: 2px solid goldenrod;
+    padding: 2px 40px;
+}
+
+.table tbody{
+    text-align: center;
+}
+
+.table tbody tr td{
+    border: 1px solid rgb(55, 8, 131);
+}
+/* 
+.table tbody:nth-child(even){
+    background-color: azure;
+} */
+
+.table tbody td.remove{
+    left: 3px;
+    position: relative;
+    border-radius: 50%;
+    color: red;
+    font-size: 19px;
+    border: none;
+    font-weight: bold;
+    padding: 0px 5px;
+    border: 2px solid red;
+    background-color: #ff003740;
+}

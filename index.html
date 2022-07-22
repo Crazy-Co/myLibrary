@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyLibrary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa40b7bfec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="msg">
+        <!-- message will be displayed here -->
+        <!-- <h4><strong>Message:</strong> $('') </h4> -->
+    </div>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="header">
+            <i class="fa-solid fa-book-open-reader icon"></i>
+            <h3 class="name"><span class="blue">My</span>Library</h3>
+        </div>
+        <hr>
+        <hr>
+        <div class="book">
+            <p>
+                Enter book details here...
+            </p>
+            <form id="libraryForm">
+                <input type="text" name="name" id="name" placeholder="Book Name" required>
+                <input type="text" name="author" id="author" placeholder="Author" required>
+                <input type="text" name="publication" id="publication" placeholder="Publication" required>
+                <input type="text" name="price" id="price" placeholder="Price" required>
+                
+                <div class="buttons">
+                    <button class="btn" type="submit">Add Book</button>
+                    <button class="btn" type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="display">
+           <h3>My Books Collection</h3>
+           <table class="table">
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Publication</th>
+                    <th>Price</th>
+                    <th>Read/Unread</th>
+                    <!-- <th></th> -->
+                </tr>
+            </thead>
+            <tbody id="book_list">
+                <!-- Books will be added here!! -->
+
+            </tbody>
+           </table>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
